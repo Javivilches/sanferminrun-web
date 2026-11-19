@@ -1,0 +1,24 @@
+{
+  "name": "San Fermín Run",
+  "short_name": "San Fermín Run",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14273a",
+  "theme_color": "#14273a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "sfr035.icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "sfr035.apple-touch-icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

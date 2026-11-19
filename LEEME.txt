@@ -1,0 +1,31 @@
+SAN FERMÍN RUN · VERSIÓN WEB 0.3.5
+==================================
+
+Actualizar la web
+-----------------
+1. Descomprime el ZIP. Sube los archivos que hay dentro de web al repositorio
+   de GitHub Pages que ya usas para el juego. No subas el ZIP entero.
+2. Publica los archivos nuevos junto con el nuevo index.html, que debe sustituir
+   al anterior. Mantén los nombres de los archivos. El archivo .nojekyll
+   puede quedarse tal como estuviera en el repositorio.
+3. Espera a que Pages publique el cambio y vuelve a abrir el enlace en Safari.
+   Si ves la versión anterior, vuelve a cargar la página.
+
+No cambies el APK de Android ni el repositorio del servidor si ya usas la 0.3.5.
+El APK 0.3.5 y esta web entran en la misma sala. En Android, crea una sala
+privada para dos o más corredores. En la web, usa Multijugador > Entrar con
+código. La 0.3.4 no puede entrar en salas de la 0.3.5.
+
+Elegir foto y hacerse un selfie
+-------------------------------
+En Personaliza tu corredor selecciona al menos una cara. Pulsa Elegir foto,
+y luego Abrir Fotos para escoger una imagen desde el selector del iPhone.
+Para tomarte una nueva, pulsa Hacer selfie > Abrir cámara frontal y acepta
+el permiso de Safari si te lo pide. También hay una opción para abrir la
+cámara del iPhone directamente si no funciona la vista previa.
+Con las dos opciones puedes ajustar el óvalo y pulsar Guardar cara.
+Las fotos originales no se suben al servidor. Al entrar en una sala,
+la miniatura de tu cara recortada puede mostrarse a los otros jugadores.
+
+Abre la dirección HTTPS en Safari actualizado. Para la primera descarga
+(aproximadamente 52 MB), conviene usar Wi-Fi. Se juega por cursores táctiles.
