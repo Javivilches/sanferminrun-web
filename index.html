@@ -3,14 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="robots" content="noindex, nofollow">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-		<title>San Fermín Run</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="San Fermín Run">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#14273a">
-<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#851b31">
+<title>San Fermín Run Multiplayer</title>
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -18,7 +16,6 @@ html, body, #canvas {
 	border: 0;
 }
 
-html, body { width:100%; height:100%; overscroll-behavior:none; }
 body {
 	color: white;
 	background-color: black;
@@ -98,18 +95,10 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="sfr035.icon.png" />
-<link rel="apple-touch-icon" href="sfr035.apple-touch-icon.png"/>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="sfr036.icon.png" />
+<link rel="apple-touch-icon" href="sfr036.apple-touch-icon.png"/>
 
-	
-<style>
-#sfr-install-tip {position:fixed;inset:0;z-index:99999;background:rgba(5,17,30,.78);display:none;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;font-family:Arial,sans-serif;touch-action:auto}
-#sfr-install-tip .panel{width:min(100%,380px);background:#fffaf0;color:#15293b;border-radius:18px;padding:25px 22px;text-align:center;box-shadow:0 10px 40px #0007}
-#sfr-install-tip h2{font-size:22px;margin:0 0 12px}
-#sfr-install-tip p{font-size:16px;line-height:1.5;margin:0 0 18px}
-#sfr-install-tip button{background:#b2223c;color:white;border:0;border-radius:11px;padding:13px 26px;font-size:17px;font-weight:bold}
-</style>
-</head>
+	</head>
 	<body>
 		<canvas id="canvas">
 			Tu navegador no admite el lienzo del juego.
@@ -120,16 +109,17 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="sfr035.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="sfr036.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="fotos035.js"></script>
+<script src="prestaciones036.js"></script>
 <script>
 (() => {
   const fetchAsset = window.fetch.bind(window);
-  const files = {"sfr035.wasm": ["application/wasm", 37700666, ["sfr035.wasm.0.bin"]], "sfr035.pck": ["application/octet-stream", 42938368, ["sfr035.pck.0.bin", "sfr035.pck.1.bin", "sfr035.pck.2.bin"]]};
+  const files = {"sfr036.wasm": ["application/wasm", 37700666, ["sfr036.wasm.0.bin"]], "sfr036.pck": ["application/octet-stream", 42945124, ["sfr036.pck.0.bin", "sfr036.pck.1.bin", "sfr036.pck.2.bin"]]};
   const gameFiles = new Map(Object.entries(files).map(([name, info]) => [new URL(name, document.baseURI).href, info]));
   window.fetch = async (resource, options) => {
     const url = new URL(typeof resource === "string" ? resource : resource.url || resource, document.baseURI);
@@ -166,9 +156,9 @@ body {
   };
 })();
 </script>
-<script src="sfr035.js"></script>
+<script src="sfr036.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"sfr035","experimentalVK":true,"fileSizes":{"sfr035.pck":42938368,"sfr035.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"sfr036","experimentalVK":true,"fileSizes":{"sfr036.pck":42945124,"sfr036.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -267,36 +257,11 @@ const engine = new Engine(GODOT_CONFIG);
 				}
 			},
 		}).then(() => {
-			setStatusMode('hidden');
+			setStatusMode('hidden'); window.dispatchEvent(new Event('sfr:ready'));
 		}, displayFailureNotice);
 	}
 }());
 		</script>
-	
-<div id="sfr-install-tip" role="dialog" aria-modal="true" aria-label="Jugar a pantalla completa">
- <div class="panel">
-  <h2>🎮 Juega a pantalla completa</h2>
-  <p>Para jugar sin las barras de Safari, pulsa <strong>Compartir</strong> <span aria-hidden="true">⬆️</span> y selecciona <strong>«Añadir a pantalla de inicio»</strong>.</p>
-  <button id="sfr-install-ok" type="button">Entendido</button>
- </div>
-</div>
-<script>
-(function(){
- const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
- const installed=window.navigator.standalone===true || window.matchMedia('(display-mode: standalone)').matches;
- if(!isIOS || installed) return;
- let dismissed=false;
- try { dismissed=localStorage.getItem('sfr-ios-install-tip-seen')==='1'; } catch(e){}
- if(dismissed) return;
- const tip=document.getElementById('sfr-install-tip');
- const ok=document.getElementById('sfr-install-ok');
- ok.addEventListener('click',function(){
-  tip.style.display='none';
-  try { localStorage.setItem('sfr-ios-install-tip-seen','1'); } catch(e){}
- });
- window.addEventListener('load',function(){setTimeout(function(){tip.style.display='flex';},1800);},{once:true});
-})();
-</script>
-</body>
+	</body>
 </html>
 
