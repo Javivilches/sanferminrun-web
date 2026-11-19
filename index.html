@@ -91,8 +91,8 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
-<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="sfr035.icon.png" />
+<link rel="apple-touch-icon" href="sfr035.apple-touch-icon.png"/>
 
 	</head>
 	<body>
@@ -105,18 +105,17 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="sfr035.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
-		<script>
+		<script src="fotos035.js"></script>
+<script>
 (() => {
   const fetchAsset = window.fetch.bind(window);
-  const gameFiles = new Map([
-    [new URL("index.wasm", document.baseURI).href, ["application/wasm", 37700666, ["index.wasm.gz"]]],
-    [new URL("index.pck", document.baseURI).href, ["application/octet-stream", 26955764, ["index.pck.gz.0", "index.pck.gz.1"]]],
-  ]);
+  const files = {"sfr035.wasm": ["application/wasm", 37700666, ["sfr035.wasm.0.bin"]], "sfr035.pck": ["application/octet-stream", 42938368, ["sfr035.pck.0.bin", "sfr035.pck.1.bin", "sfr035.pck.2.bin"]]};
+  const gameFiles = new Map(Object.entries(files).map(([name, info]) => [new URL(name, document.baseURI).href, info]));
   window.fetch = async (resource, options) => {
     const url = new URL(typeof resource === "string" ? resource : resource.url || resource, document.baseURI);
     const info = gameFiles.get(url.href);
@@ -152,9 +151,9 @@ body {
   };
 })();
 </script>
-<script src="index.js"></script>
+<script src="sfr035.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":26955764,"index.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"sfr035","experimentalVK":true,"fileSizes":{"sfr035.pck":42938368,"sfr035.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -199,7 +198,7 @@ const engine = new Engine(GODOT_CONFIG);
 		} else if (typeof err === 'string') {
 			setStatusNotice(err);
 		} else {
-			setStatusNotice('An unknown error occurred.');
+			setStatusNotice('No se pudo cargar el juego. Recarga la página.');
 		}
 		setStatusMode('notice');
 		initializing = false;
@@ -237,7 +236,7 @@ const engine = new Engine(GODOT_CONFIG);
 			});
 		} else {
 			// Display the message as usual
-			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+			const missingMsg = 'Error\nEl navegador no tiene todas las funciones que necesita el juego. Actualiza Safari:\n';
 			displayFailureNotice(missingMsg + missing.join('\n'));
 		}
 	} else {
