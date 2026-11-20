@@ -1,1 +1,1 @@
-Sube todos los archivos de web/ a GitHub Pages, incluidos los sfr037.pck.torero_cachas.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Si ya usabas la versión anterior con personajes especiales, no necesitas actualizar Render.
+Sube todos los archivos de web/ a GitHub Pages, incluidos los sfr037.pck.torero_mangas.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Si ya usabas la versión anterior con personajes especiales, no necesitas actualizar Render.
