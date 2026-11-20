@@ -1,1 +1,1 @@
-Sube todos los archivos de web/ a GitHub Pages, incluidos los sfr037.pck.torero_limpio.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Si ya usabas la versión anterior con personajes especiales, no necesitas actualizar Render.
+Sube todos los archivos de web/ a GitHub Pages, incluidos los sfr037.pck.corredoras.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Para mostrar las nuevas corredoras en multijugador, actualiza servidor/server.py en Render con el incluido en el ZIP de Android. El modo individual funciona sin este paso.
