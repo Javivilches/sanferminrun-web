@@ -1,0 +1,24 @@
+SAN FERMÍN RUN 0.3.7 · WEB
+
+Sube solo el contenido de web/ a la ubicación del juego. Los
+bloques .bin ya están preparados para GitHub, no los renombres.
+Para conservar la versión anterior hasta el despliegue, puedes
+subir todas las piezas nuevas junto al nuevo index.html en un
+solo commit. Las piezas antiguas sfr036.* ya no son necesarias
+una vez que la versión nueva esté servida. fotos035.js y
+prestaciones036.js siguen siendo necesarios.
+
+En iPhone: abre la URL HTTPS en Safari. Puedes añadir el juego
+a la pantalla de inicio de iOS para ocultar la barra de Safari.
+
+Para que la primera parte del encierro online sea más suave y
+se vea la camiseta de Joaquín en las salas: actualiza server.py
+en el repo del servidor de Render con servidor/server.py del
+proyecto 0.3.7. No necesitas cambiar la URL. Se conserva el
+protocolo de antes. Sin actualizar Render el arranque online
+mantiene la dificultad de la versión anterior.
+
+Cabezones: Personalizar > Caras > Elegir cabezón. Selecciona
+primero al corredor principal o a un amigo. Puedes seguir
+usando tus propias fotos. Si quieres mantener esta versión
+privada, no la subas a un sitio web accesible al público.
