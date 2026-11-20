@@ -1,1 +1,1 @@
-Sube todos los archivos de web/ a GitHub Pages, incluidos los dos sfr037.pck.especiales20.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Se ven las nuevas apariencias en multijugador si también se actualiza Render con el servidor del ZIP de Android.
+Sube todos los archivos de web/ a GitHub Pages, incluidos los sfr037.pck.especiales8.*.bin y el sfr037.wasm.0.bin. Conserva sus nombres. Si ya usabas la versión anterior con personajes especiales, no necesitas actualizar Render.
