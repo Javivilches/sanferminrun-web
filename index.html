@@ -192,7 +192,7 @@ body {
 <script>
 (() => {
   const fetchAsset = window.fetch.bind(window);
-  const files = {"sfr037.wasm": ["application/wasm", 37700666, ["sfr037.wasm.0.bin"]], "sfr037.pck": ["application/octet-stream", 48170280, ["sfr037.pck.torero_limpio.0.bin", "sfr037.pck.torero_limpio.1.bin"]]};
+  const files = {"sfr037.wasm":["application/wasm",37902138,["sfr037.wasm.0.bin"]],"sfr037.pck":["application/octet-stream",51470124,["sfr037.pck.0.bin","sfr037.pck.1.bin","sfr037.pck.2.bin"]]};
   const gameFiles = new Map(Object.entries(files).map(([name, info]) => [new URL(name, document.baseURI).href, info]));
   window.fetch = async (resource, options) => {
     const url = new URL(typeof resource === "string" ? resource : resource.url || resource, document.baseURI);
@@ -249,7 +249,7 @@ body {
 </script>
 <script src="sfr037.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"sfr037","experimentalVK":true,"fileSizes":{"sfr037.pck":48170280,"sfr037.wasm":37700666},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"sfr037","experimentalVK":true,"fileSizes":{"sfr037.wasm":37902138,"sfr037.pck":51470124},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
