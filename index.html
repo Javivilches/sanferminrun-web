@@ -186,7 +186,7 @@ body {
 <script>
 (() => {
   const fetchAsset = window.fetch.bind(window);
-  const files = {"SanFerminRun.wasm":["application/wasm",37902138,["SanFerminRun.wasm.v048.0.bin"]],"SanFerminRun.pck":["application/octet-stream",50360080,["SanFerminRun.pck.v048.0.bin","SanFerminRun.pck.v048.1.bin","SanFerminRun.pck.v048.2.bin"]]};
+  const files = {"SanFerminRun.wasm":["application/wasm",37902138,["SanFerminRun.wasm.v049.0.bin"]],"SanFerminRun.pck":["application/octet-stream",50360992,["SanFerminRun.pck.v049.0.bin","SanFerminRun.pck.v049.1.bin","SanFerminRun.pck.v049.2.bin"]]};
   const gameFiles = new Map(Object.entries(files).map(([name, info]) => [new URL(name, document.baseURI).href, info]));
   window.fetch = async (resource, options) => {
     const url = new URL(typeof resource === "string" ? resource : resource.url || resource, document.baseURI);
@@ -243,7 +243,7 @@ body {
 </script>
 <script src="SanFerminRun.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"SanFerminRun","experimentalVK":true,"fileSizes":{"SanFerminRun.pck":50360080,"SanFerminRun.wasm":37902138},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"SanFerminRun","experimentalVK":true,"fileSizes":{"SanFerminRun.pck":50360992,"SanFerminRun.wasm":37902138},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
