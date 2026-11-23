@@ -1,0 +1,5 @@
+Sube todos los archivos de este ZIP a la raiz de tu repositorio GitHub Pages, sustituyendo index.html y los archivos del juego antiguos.
+Mantén los archivos existentes fotos035.js, prestaciones036.js, manifest.webmanifest y cualquier otro archivo que no aparezca en este ZIP.
+Los archivos .bin son las partes comprimidas del nuevo juego y deben subirse todos. No es necesario subir SanFerminRun.html, .pck ni .wasm originales.
+La portada de iPhone/Android y el enlace a la ultima APK se conservan en index.html.
+Comprueba la web en Safari y Android tras publicar.
