@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "promociones": [
+    {
+      "id": "cristiano_01",
+      "personaje": "cristiano",
+      "activo": false,
+      "requisito": "superados",
+      "cantidad": 3,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "padilla_01",
+      "personaje": "padilla",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "indurain_01",
+      "personaje": "indurain",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "messi_01",
+      "personaje": "messi",
+      "activo": false,
+      "requisito": "kalimotxos",
+      "cantidad": 100,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "nadal_01",
+      "personaje": "nadal",
+      "activo": false,
+      "requisito": "superados_dificil",
+      "cantidad": 2,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "ronaldo_01",
+      "personaje": "ronaldo",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "cacho_01",
+      "personaje": "cacho",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "maradona_01",
+      "personaje": "maradona",
+      "activo": true,
+      "requisito": "partidas",
+      "cantidad": 10,
+      "partidas_gratis": 3,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "caravinagre_01",
+      "personaje": "caravinagre",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "morante_01",
+      "personaje": "morante",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    },
+    {
+      "id": "alonso_01",
+      "personaje": "alonso",
+      "activo": false,
+      "requisito": "partidas",
+      "cantidad": 5,
+      "partidas_gratis": 1,
+      "inicio": 0,
+      "fin": 0,
+      "mensaje": "¡Prueba gratuita de {personaje}! Puedes correr {partidas} partida(s)."
+    }
+  ]
+}
